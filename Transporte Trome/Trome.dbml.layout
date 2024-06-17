@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.25, 8.75" name="Trome">
+  <DataContextMoniker Name="/TromeDataContext" />
+  <nestedChildShapes>
+    <classShape Id="9526baaf-0ac5-4601-a8d7-2a34cc30321b" absoluteBounds="9, 2.875, 2, 1.193992513020834">
+      <DataClassMoniker Name="/TromeDataContext/ColaboradorEnvio" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bd1dfb83-325f-4614-a01c-9ca75f51a7d0" absoluteBounds="9.015, 3.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3c621136-033f-4913-a8ee-8a1ce6a89a46" absoluteBounds="3.5, 3.875, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/TromeDataContext/Cliente" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7c6b4398-69be-48fb-ab20-962e7474361e" absoluteBounds="3.515, 4.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a92db761-a207-4b59-ab63-890a34217e05" absoluteBounds="3.5, 0.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/TromeDataContext/Colaborador" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3465b70a-6f90-4290-a08b-11aca219ce68" absoluteBounds="3.515, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="699241ed-dff0-488f-a824-7396d0795717" absoluteBounds="6.25, 3.5, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/TromeDataContext/Envio" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e5f952ef-1986-4541-b558-63c39614aad9" absoluteBounds="6.265, 3.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b099ab39-83bd-477b-855f-e62bc98cc006" absoluteBounds="3.5, 7.125, 2, 1.3862939453125014">
+      <DataClassMoniker Name="/TromeDataContext/Servicio" />
+      <nestedChildShapes>
+        <elementListCompartment Id="610a1b1f-75a4-4c97-9c04-474936cb228e" absoluteBounds="3.515, 7.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0e5bf2ef-dcf9-4303-9751-a35b242fa647" absoluteBounds="0.75, 4.25, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/TromeDataContext/Usuario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a5bdbc7c-4b8a-447f-ad96-ee7098f027ab" absoluteBounds="0.765, 4.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d8238bdf-635b-4c19-82a1-6acf4eed08fe" absoluteBounds="0.75, 6.375, 2, 1.7708968098958318">
+      <DataClassMoniker Name="/TromeDataContext/Vehiculo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5f0dbde6-9889-4507-8bde-8b8b20d00402" absoluteBounds="0.765, 6.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 1.8124995); (10 : 1.8124995); (10 : 2.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TromeDataContext/Colaborador/Colaborador_ColaboradorEnvio" />
+      <nodes>
+        <classShapeMoniker Id="a92db761-a207-4b59-ab63-890a34217e05" />
+        <classShapeMoniker Id="9526baaf-0ac5-4601-a8d7-2a34cc30321b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 3.78449625651042); (9 : 3.78449625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TromeDataContext/Envio/Envio_ColaboradorEnvio" />
+      <nodes>
+        <classShapeMoniker Id="699241ed-dff0-488f-a824-7396d0795717" />
+        <classShapeMoniker Id="9526baaf-0ac5-4601-a8d7-2a34cc30321b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.84699625651042); (3.04166666666667 : 4.84699625651042 : JumpStart); (3.20833333333333 : 4.84699625651042 : JumpEnd); (3.5 : 4.84699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TromeDataContext/Usuario/Usuario_Cliente" />
+      <nodes>
+        <classShapeMoniker Id="0e5bf2ef-dcf9-4303-9751-a35b242fa647" />
+        <classShapeMoniker Id="3c621136-033f-4913-a8ee-8a1ce6a89a46" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 4.25); (1.75 : 1.37012241861979); (3.5 : 1.37012241861979)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TromeDataContext/Usuario/Usuario_Colaborador" />
+      <nodes>
+        <classShapeMoniker Id="0e5bf2ef-dcf9-4303-9751-a35b242fa647" />
+        <classShapeMoniker Id="a92db761-a207-4b59-ab63-890a34217e05" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.375); (3.125 : 6); (3.125 : 2.16906304654948); (3.5 : 2.16906304654948)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TromeDataContext/Vehiculo/Vehiculo_Colaborador" />
+      <nodes>
+        <classShapeMoniker Id="d8238bdf-635b-4c19-82a1-6acf4eed08fe" />
+        <classShapeMoniker Id="a92db761-a207-4b59-ab63-890a34217e05" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.85659912109375); (6.25 : 4.85659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TromeDataContext/Cliente/Cliente_Envio" />
+      <nodes>
+        <classShapeMoniker Id="3c621136-033f-4913-a8ee-8a1ce6a89a46" />
+        <classShapeMoniker Id="699241ed-dff0-488f-a824-7396d0795717" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 7.81814697265625); (7.25 : 7.81814697265625); (7.25 : 6.23240397135417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TromeDataContext/Servicio/Servicio_Envio" />
+      <nodes>
+        <classShapeMoniker Id="b099ab39-83bd-477b-855f-e62bc98cc006" />
+        <classShapeMoniker Id="699241ed-dff0-488f-a824-7396d0795717" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
